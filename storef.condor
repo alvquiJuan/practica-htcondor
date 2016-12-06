@@ -1,0 +1,11 @@
+executable  = storef
+Universe    = vanilla
+arguments   = 45 numero.txt
+Output      = out.$(cluster)
+error       = err.$(cluster)
+log         = log.$(cluster)
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+queue
