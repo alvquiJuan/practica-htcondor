@@ -14,7 +14,7 @@ fread (buffer, 1, 100, f1);
 Y = atof(buffer);
 fclose(f1);
 
-X = cos (pow ((PI/('Y')),2));
+X = pow (cos (PI/(Y)),2);
 f2 = fopen("coseno.txt","w");
 fprintf(f2,"%lf",X);
 fclose(f2);
