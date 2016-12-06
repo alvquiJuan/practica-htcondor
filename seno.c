@@ -14,7 +14,7 @@ fread (buffer, 1, 100, f1);
 Y = atof(buffer);
 fclose(f1);
 
-X = sin (pow ((PI/('Y')),2));
+X = pow (sin (PI/(Y)),2);
 f2 = fopen("seno.txt","w");
 fprintf(f2,"%lf",X);
 fclose(f2);
