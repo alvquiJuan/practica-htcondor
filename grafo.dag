@@ -1,0 +1,6 @@
+JOB storef storef.condor
+JOB seno seno.condor
+JOB coseno coseno.condor
+JOB colector colector.condor
+PARENT storef CHILD seno coseno
+PARENT seno coseno CHILD colector
