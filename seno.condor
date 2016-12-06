@@ -1,0 +1,11 @@
+executable  = seno
+Universe    = vanilla
+Output      = out.$(cluster)
+error       = err.$(cluster)
+log         = log.$(cluster)
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+Transfer_Input_Files = numero.txt
+
+queue
